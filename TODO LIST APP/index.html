@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/todo-list-icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Todo list</title>
+</head>
+<body>
+
+
+<div class="todoSection">
+    
+    <div class="todoContainer">
+
+        <div class="taskManagement">
+            <div>
+                <p>TOTAL TASKS:</p>
+                <p class="totalNum totalNums">0</p>
+            </div>
+            <div>
+                <p>TASKS CRUSHED:</p>
+                <p class="complete">0</p>
+            </div>
+            <div>
+                <p>TASKS LEFT:</p>
+                <p class="remainingTasks">0</p>
+            </div>
+        </div>
+
+
+
+        <!-- <div class="darkMode">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </div> -->
+
+
+
+
+        <div class="todoComponents">
+            <div class="inputSection">
+                <input class="todoInput" type="text" onfocus="this.value=''">
+                <i class="fas fa-plus todoAdd" title="click to add task"></i>
+            </div>
+            
+            <div class="alertBox alertBoxVisible">
+                <p>please enter a task</p>
+            </div>
+        </div>
+
+
+
+
+        
+        <div class="todoList">
+            <ul class="todoItems">
+
+                <!-- <p class="todoWord">TODO</p> -->
+
+                <!-- <li class="todoItem">
+                    <div class="listContent">
+                        <input type="checkbox" class="checkBox">
+                        <div class="todoName"><p>${todoInput.value}</p></div>
+                        <i class="fas fa-times todoCancel"></i>
+                    </div>
+                    <div class="dateContent">
+                        <p>${newDate}/${newMonth}/${date.getFullYear()}</p>
+                        <p>${newHour}:${newMinute} ${newHour</p>
+                    </div>
+                </li> -->
+
+            </ul>
+        </div>
+
+        <div>
+            <button class="clearBtn">clear all</button>
+            <!-- <button class="removeBtn">clear completed</button> -->
+        </div>
+        
+    </div>
+    
+</div>
+
+
+
+<script src="todo.js" defer></script>
+</body>
+</html>
